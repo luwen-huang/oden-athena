@@ -1,0 +1,23 @@
+{
+  "name": "oden-athena",
+  "version": "1.0.0",
+  "description": "CSS and style guide for Oden",
+  "scripts": {
+    "dev": "node index.js",
+    "build": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.4",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-copy": "^4.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "postcss-modules": "^1.4.1",
+    "sass": "^1.23.0"
+  }
+}
