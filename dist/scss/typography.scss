@@ -5,7 +5,6 @@ html {
 
 body {
   font-family: 'Libre Franklin', sans-serif;
-  background: #f0f0f0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,6 +62,22 @@ p, li {
   font-weight: 700;
 }
 
+.with-text-underline {
+  background-image: linear-gradient(to right, #bf5700 100%, transparent 100%);
+
+  background-position: 0 1.1em;
+  background-repeat: repeat-x;
+  background-size: 8px 2px;
+
+  text-shadow: 1px 1px #fcfcfc, 1px -1px #fcfcfc, -1px 1px #fcfcfc, -1px -1px #fcfcfc;
+}
+
 a {
   color: #bf5700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f8971f;
+  text-decoration: none;
 }
