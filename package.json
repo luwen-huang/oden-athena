@@ -4,7 +4,8 @@
   "description": "CSS and style guide for Oden",
   "scripts": {
     "dev": "node index.js",
-    "build": "gulp"
+    "build": "gulp",
+    "heroku": ""
   },
   "author": "",
   "license": "ISC",
