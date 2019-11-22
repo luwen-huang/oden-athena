@@ -1,0 +1,12 @@
+.oden-athena__bg-wrapper {
+  height: 100%;
+  width: 100%; }
+  .oden-athena__bg-wrapper .oden-athena__group:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.oden-athena__group:after .oden-athena__group:after {
+  content: "";
+  display: table;
+  clear: both; }

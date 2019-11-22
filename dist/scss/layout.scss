@@ -1,0 +1,21 @@
+
+// clearfix
+@mixin group {
+  .group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+.bg-wrapper {
+  height: 100%;
+  width: 100%;
+  @include group;
+}
+
+
+.group:after {
+  @include group;
+}
