@@ -1,0 +1,44 @@
+
+body {
+  background-color: #f0f0f1;
+}
+
+.wrapper {
+  height: 100%;
+  max-width: 1200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toc {
+  padding: 3em 1.5em;
+}
+
+.section--demo {
+  background: #fff;
+  padding: 3em 2em 1.5em 2em;
+}
+
+.no-bottom-padding {
+  padding-bottom: 0;
+}
+
+.section__text {
+  color: #585858;
+  margin-bottom: 1.6em;
+}
+
+code {
+  font-size: .85em;
+  display: inline-block;
+  margin-bottom: calc(1.6rem - .889em);
+}
+
+pre {
+  font-size: .85em;
+  display: block;
+  background: #e5e5e5;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}

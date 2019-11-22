@@ -20,6 +20,52 @@
   @include group;
 }
 
+// --- content sections ----
+
 .section {
-  
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.section--light {
+  background: #fff;
+}
+
+.section__title {
+  font-size: 1.777rem;
+  font-weight: 700;
+  color: #404040;
+  margin-bottom: calc(1.45rem*3 - 1.777rem);
+  position: relative;
+}
+
+.section__title::before {
+  content: '';
+  position: absolute;
+  top: -.55em;
+  width: 60px;
+  height: 7px;
+  background: #bf5700;
+}
+
+.section__text {
+  line-height: 1.6;
+  margin-bottom: calc(1.6rem*3 - 1rem);
+}
+
+// --- splash sections ----
+
+
+.splash-title {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 2.369rem;
+  margin-bottom: calc(1.45rem*3 - 1.777rem);
+}
+
+.splash-lead {
+  color: #404040;
+  line-height: 1.6;
+  font-size: 1.333rem;
+  margin-bottom: calc(1.6rem*3 - 1.333rem);
 }

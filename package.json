@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "CSS and style guide for Oden",
   "scripts": {
-    "dev": "node index.js",
+    "dev": "nodemon ./bin/www",
     "build": "gulp",
-    "docs": "rm -r ./public/css/lib/oden-athena; cp -r ./dist ./public/css/lib; mv ./public/css/lib/dist ./public/css/lib/oden-athena"
+    "docs": "rm -r ./public/css/lib/oden-athena; cp -r ./dist ./public/css/lib/dist; mv ./public/css/lib/dist ./public/css/lib/oden-athena"
   },
   "author": "",
   "license": "ISC",
@@ -23,9 +23,11 @@
   },
   "dependencies": {
     "cookie-parser": "^1.4.4",
+    "ejs": "^2.7.4",
     "express": "^4.17.1",
     "http-errors": "^1.7.3",
     "morgan": "^1.9.1",
+    "nodemon": "^2.0.1",
     "path": "^0.12.7"
   }
 }

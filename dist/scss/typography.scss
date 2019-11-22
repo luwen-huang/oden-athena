@@ -15,17 +15,22 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 2.369rem;
-    margin-bottom: calc(1.45rem*3 - 2.369rem);
+    margin-bottom: calc(1.5rem*3 - 2.369rem);
+    line-height: 1.6;
 }
 
 h2 {
     font-size: 1.777rem;
-    margin-bottom: calc(1.45rem*2 - 1.777rem);
+    margin-bottom: calc(1.5rem*2 - 1.777rem);
+    line-height: 1.6;
+
 }
 
 h3, h4, h5, h6 {
     font-size: 1.333rem;
-    margin-bottom: calc(1.45rem*2 - 1.333rem);
+    margin-bottom: calc(1.5rem*2 - 1.333rem);
+    line-height: 1.6;
+
 }
 
 // h1 {
@@ -88,13 +93,26 @@ a:hover {
   text-decoration: none;
 }
 
-
-.with-text-underline:hover {
-  background-image: linear-gradient(to right, #f8971f 100%, transparent 100%);
+.with-text-underline {
+  background-image: linear-gradient(to right, #bf5700 100%, transparent 100%);
 
   background-position: 0 1.1em;
   background-repeat: repeat-x;
   background-size: 8px 2px;
+
+  text-shadow: 1px 1px #fcfcfc, 1px -1px #fcfcfc, -1px 1px #fcfcfc, -1px -1px #fcfcfc;
+}
+
+.with-text-underline:hover {
+  background-image: linear-gradient(to right, #f8971f 100%, transparent 100%);
+}
+
+.with-text-emphasis {
+  background-image: linear-gradient(to right, rgba(216, 99, 3, 0.5) 100%, transparent 100%);
+
+  background-position: 0 1em;
+  background-repeat: repeat-x;
+  background-size: 8px 6px;
 
   text-shadow: 1px 1px #fcfcfc, 1px -1px #fcfcfc, -1px 1px #fcfcfc, -1px -1px #fcfcfc;
 }
