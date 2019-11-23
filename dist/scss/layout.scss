@@ -27,15 +27,11 @@
   padding-bottom: 6em;
 }
 
-.section--light {
-  background: #fff;
-}
-
 .section__title {
-  font-size: 1.777rem;
+  font-size: 1.777em;
   font-weight: 700;
   color: #404040;
-  margin-bottom: calc(1.45rem*3 - 1.777rem);
+  margin-bottom: calc(1.6rem*3 - 1.777em);
   position: relative;
 }
 
@@ -50,7 +46,12 @@
 
 .section__text {
   line-height: 1.6;
-  margin-bottom: calc(1.6rem*3 - 1rem);
+  margin-bottom: calc(1.6em*2 - 1rem);
+}
+
+
+.section--dark .section__title {
+  color: #ddd;
 }
 
 // --- splash sections ----
@@ -66,5 +67,6 @@
 .splash-lead {
   color: #404040;
   line-height: 1.6;
-  margin-bottom: calc(1.6rem*3 - 1rem);
+  font-size: 1.333rem;
+  margin-bottom: calc(1.6rem*3 - 1.333rem);
 }

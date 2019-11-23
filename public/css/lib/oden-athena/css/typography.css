@@ -9,24 +9,32 @@ h1, h2, h3, h4, h5, h6 {
   color: #404040;
   font-weight: 700; }
 
+.oden-athena__scale-6 {
+  font-size: 4.209em;
+  margin-bottom: calc(4.209em - 4.209em); }
+
+.oden-athena__scale-5 {
+  font-size: 3.157em;
+  margin-bottom: calc(1.5rem*4 - 3.157em); }
+
 h1 {
-  font-size: 2.369rem;
-  margin-bottom: calc(1.5rem*3 - 2.369rem);
-  line-height: 1.6; }
+  font-size: 2.369em;
+  margin-bottom: calc(1.5rem*3 - 2.369em);
+  line-height: 1.5; }
 
 h2 {
-  font-size: 1.777rem;
-  margin-bottom: calc(1.5rem*2 - 1.777rem);
-  line-height: 1.6; }
+  font-size: 1.777em;
+  margin-bottom: calc(1.5rem*2 - 1.777em);
+  line-height: 1.5; }
 
 h3, h4, h5, h6 {
   font-size: 1.333rem;
-  margin-bottom: calc(1.5rem*2 - 1.333rem);
-  line-height: 1.6; }
+  margin-bottom: calc(1.5rem*2 - 1.333em);
+  line-height: 1.5; }
 
 p, li {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #333; }
 
 .oden-athena__large {

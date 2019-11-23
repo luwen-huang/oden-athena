@@ -15,14 +15,11 @@
   padding-top: 6em;
   padding-bottom: 6em; }
 
-.oden-athena__section--light {
-  background: #fff; }
-
 .oden-athena__section__title {
-  font-size: 1.777rem;
+  font-size: 1.777em;
   font-weight: 700;
   color: #404040;
-  margin-bottom: calc(1.45rem*3 - 1.777rem);
+  margin-bottom: calc(1.6rem*3 - 1.777em);
   position: relative; }
 
 .oden-athena__section__title::before {
@@ -35,7 +32,10 @@
 
 .oden-athena__section__text {
   line-height: 1.6;
-  margin-bottom: calc(1.6rem*3 - 1rem); }
+  margin-bottom: calc(1.6em*2 - 1rem); }
+
+.oden-athena__section--dark .oden-athena__section__title {
+  color: #ddd; }
 
 .oden-athena__splash-title {
   margin-top: 1.5rem;
@@ -46,4 +46,5 @@
 .oden-athena__splash-lead {
   color: #404040;
   line-height: 1.6;
-  margin-bottom: calc(1.6rem*3 - 1rem); }
+  font-size: 1.333rem;
+  margin-bottom: calc(1.6rem*3 - 1.333rem); }

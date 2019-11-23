@@ -1,0 +1,78 @@
+@import './layout.scss';
+
+/* --- brick --- */
+
+.masonry-grid {
+  list-style: none;
+  margin-top: 1.5em;
+  margin-bottom: 6em;
+  @include group;
+}
+
+
+.brick-item {
+  float: left;
+  padding: 1.5em 1em;
+
+  margin-bottom: 16px;
+  margin-right: 10px;
+
+  background: #fff;
+  cursor: pointer;
+}
+
+.brick__item-image {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+
+.brick-item p:last-child {
+  margin-bottom: 0;
+}
+
+.brick__item-name {
+  color: #bf7500;
+}
+
+.brick__item-description {
+  font-size: .85em;
+}
+
+.brick__item-meta {
+  color: #666;
+  font-size: .75em;
+}
+
+.brick-item:hover .brick__item-name {
+  color: #f8971f;
+}
+
+.brick-item:hover .brick__item-description {
+  color: #555;
+}
+
+// ----- declarative box ----
+
+.declarative-box {
+  padding: 3em 1.5em;
+}
+
+.declarative-box__eyebrow {
+  font-size: .85em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #00a9b7;
+}
+
+.declarative-box__title {
+  line-height: 1.3;
+  font-weight: 570;
+  color: #bf5700;
+  margin-bottom: 1.5rem;
+}
+
+.declarative-box__link-out {
+  margin-top: 3em;
+}

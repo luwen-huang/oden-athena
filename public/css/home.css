@@ -1,6 +1,10 @@
+html {
+  font-size: 16px;
+}
 
 body {
   background-color: #f0f0f1;
+  line-height: 1.6;
 }
 
 .wrapper {
@@ -11,17 +15,24 @@ body {
   margin-right: auto;
 }
 
-.toc {
-  padding: 3em 1.5em;
+.section {
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
-.section--demo {
+.bg-white {
   background: #fff;
-  padding: 3em 2em 1.5em 2em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 .no-bottom-padding {
   padding-bottom: 0;
+}
+
+
+.section__title {
+  margin-bottom: 1.5rem;
 }
 
 .section__text {
@@ -29,7 +40,24 @@ body {
   margin-bottom: 1.6em;
 }
 
-code {
+.to-code-link {
+  display: block;
+  margin-bottom: calc(1.5rem*2 - .85em);
+  font-size: .85em;
+}
+
+.oden-athena__brick-collection {
+  display: block;
+  margin: 3em auto;
+  width: 80%;
+}
+
+.oden-athena__brick-item {
+  font-size: .85em;
+  width: 45%;
+}
+
+/*code {
   font-size: .85em;
   display: inline-block;
   margin-bottom: calc(1.6rem - .889em);
@@ -41,4 +69,21 @@ pre {
   background: #e5e5e5;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
+}*/
+
+
+.toc {
+  padding: 3em 1.5em;
+}
+
+.toc__heading {
+  font-size: .85em;
+  margin-bottom: calc(1.5em - .85em)
+}
+
+.toc__sub-heading {
+  font-size: .85em;
+  margin-left: 1em;
+  margin-bottom: calc(1.5em - .85em)
+
 }

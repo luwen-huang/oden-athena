@@ -4,6 +4,7 @@
     <title><%= title %></title>
 
     <link rel='stylesheet' href='/css/lib/foundation.min.css' />
+    <link rel='stylesheet' href='/css/lib/prism.css' />
     <link rel='stylesheet' href='/css/common.css' />
     <link rel='stylesheet' href='/css/home.css' />
   </head>
@@ -13,83 +14,97 @@
       <div class="grid-x">
         <div class="cell medium-2 large-3">
           <div class="oden-athena__section toc">
-            <p><a href="#typography">Colors</a></p>
-            <p><a href="#typography">Typography</a></p>
-            <p><a href="#typography">Layout</a></p>
+            <section class="">
+              <p class="toc__heading">Fundamentals</p>
+              <p class="toc__sub-heading"><a href="#typography">Colors</a></p>
+              <p class="toc__sub-heading"><a href="#typography">Typography</a></p>
+              <p class="toc__sub-heading"><a href="#typography">Layout</a></p>
+            </section>
+            <section class="">
+              <p class="toc__heading">Components</p>
+              <p class="toc__sub-heading"><a href="#components--brick">Brick</a></p>
+              <p class="toc__sub-heading"><a href="#components--basic-section">Basic section</a></p>
+              <p class="toc__sub-heading"><a href="#components--declarative-box">Declarative box</a></p>
+            </section>
 
           </div>
         </div>
 
         <div class="cell medium-10 large-9">
-          <section class="oden-athena__section">
+          <section class="section">
             <h1 class="oden-athena__splash-title">Oden Athena</h1>
             <p class="section__text">
               Hello! This is the documentation for Oden Athena. Oden Athena is the component library for frontend components for the Oden webpages.
-              It houses CSS and HTML5 custom components.
-              All of the styling here is an example of how an app could drop in Oden Athena.
+              Currently, it's a collection of CSS classes. However, if we are comfortable requiring Javascript and latest browsers, we can instead use Shadow DOM components.
             </p>
-
-
           </section>
 
 
-          <section class="oden-athena__section" id="typography">
-            <section class="oden-athena__section">
-              <h2 class="section__title">Links</h2>
-              <p class="section__text">Links are burnt orange, and bright orange upon hover. In most circumstances, links should be underlined to generate a stronger call-to-action. </p>
-              <pre>
-Designing a good hyperlink is not as simply as one would imagine. For the intricacies of making a perfect link, visit &lt;a href="#typograph" class="oden-athena__with-text-underline"&gt;this article&lt;/a&gt; to read more on the trickeries of line-wrapping, baseline heights and descenders.</pre>
+          <section class="section" id="components">
+            <section class="section" id="components--brick">
+              <h2 class="section__title">Brick</h2>
+              <p class="section__text">A brick is a small block of content. A brick can have any one or more of the following: name, description, meta or image.  Use bricks when you have at least ~6 of the same type of content, but you don't want to display them in a boring list. Bricks are arranged in a masonry-like layout.</p>
 
-              <div class="section--demo oden-athena__section--light">
-                <p>Designing a good hyperlink is not as simply as one would imagine. For the intricacies of making a perfect link, visit <a href="#typograph" class="oden-athena__with-text-underline">this article</a> to read more on the trickeries of line-wrapping, baseline heights and descenders.
-                </p>
+              <a href="" class="to-code-link">View code &rarr;</a>
+
+              <div class="clearfix masonry-grid oden-athena__brick-collection">
+                <div class="oden-athena__brick-item">
+                  <img class="oden-athena__brick__item-image" src="/images/brick__episode-1.jpg" />
+                  <p class="oden-athena__brick__item-name">Episode I &mdash; The Phantom Menace</p>
+                  <p class="oden-athena__brick__item-description">Obi-Wan Kenobi  is a young apprentice Jedi knight under the tutelage of Qui-Gon Jinn; Anakin Skywalker, who will later father Luke Skywalker and become known as Darth Vader, is just a 9-year-old boy...</p>
+                </div>
+                <div class="oden-athena__brick-item">
+                  <p class="oden-athena__brick__item-name">Episode II &mdash; Attack of the Clones</p>
+                  <p class="oden-athena__brick__item-description">Set ten years after the events of "The Phantom Menace," the Republic continues to be mired in strife and chaos. A separatist movement encompassing hundreds of planets and powerful corporate alliances poses new threats to the galaxy that even the Jedi cannot stem...</p>
+                  <p class="oden-athena__brick__item-meta">Jul 4 2020</p>
+                </div>
+                <div class="oden-athena__brick-item">
+                  <!-- <img class="oden-athena__brick__item-image" src="/images/brick__episode-3.jpg" /> -->
+                  <p class="oden-athena__brick__item-name">Episode III &mdash; Revenge of the Sith</p>
+                  <p class="oden-athena__brick__item-meta">Jul 4 2020</p>
+                </div>
+                <div class="oden-athena__brick-item">
+                  <p class="oden-athena__brick__item-name">Episode IV &mdash; A New Hope</p>
+                  <p class="oden-athena__brick__item-description">The Imperial Forces &mdash; under orders from cruel Darth Vader &mdash; hold Princess Leia  hostage, in their efforts to quell the rebellion against the Galactic Empire...</p>
+                </div>
+                <div class="oden-athena__brick-item">
+                  <p class="oden-athena__brick__item-name">Episode V &mdash; The Empire Strikes Back</p>
+                  <p class="oden-athena__brick__item-description">The adventure continues in this "Star Wars" sequel. Luke Skywalker (Mark Hamill), Han Solo (Harrison Ford), Princess Leia (Carrie Fisher) and Chewbacca (Peter Mayhew) face attack by the Imperial forces and its AT-AT walkers on the ice planet Hoth. While Han and Leia escape in the Millennium Falcon...</p>
+                  <p class="oden-athena__brick__item-meta">Jul 4 2020</p>
+                </div>
               </div>
             </section>
 
-            <section class="oden-athena__section">
-              <h2 class="s">Typography</h2>
-              <h1 class="">H1 &mdash; the top-level heading</h1>
-              <h2 class="">H2 &mdash; second-level headings</h2>
-              <h3 class="">H3 &mdash; third-level headings, usually for section titles</h3>
-            </section>
+            <section class="section" id="components--basic-section">
+              <h2 class="section__title">Basic section</h2>
+              <p class="section__text">A basic section is a second-level organizational block on the page. Use them when you are moving down the page, from one content section to the other. Therefore, sections come with lots of padding (6em on top and bottom, and at least 1.5em on each side), a title (something eye-catching) and a lead (something to elaborate on from your title). Make your sections contrast against the background color.</p>
 
+              <a href="" class="to-code-link">View code &rarr;</a>
 
-
-          </section>
-
-          <section class="oden-athena__section" id="layout">
-            <h2 class="section__title">Layout</h2>
-            <p class="section__text">Components, styles and typography for page layout</p>
-
-            <section class="oden-athena__section no-bottom-padding">
-              <h3 class="section__title">Splash</h3>
-              <p class="section__text">A splash (or hero) section is the first section the user sees above the fold. Splash sections have <span class="oden-athena__with-text-emphasis">titles</span> &mdash; eye-catching text that you want the user to see, <span class="oden-athena__with-text-emphasis">leads</span> &mdash; description text set in larger font that elaborates on the title, and require a good amount of whitespace. </p>
-
-              <pre> &lt;h1 class="oden-athena__splash-title"&gt;The Last Jedi&lt;/h1&gt;
- &lt;p class="oden-athena__splash-lead">Instead of Rey, could Leia have been the originally-intended &dquot;Last Jedi&dquot;? The Last Jedi is a sequel to the Force Awakens and is the second to last episode of the Skywalker saga. Not quite as good as The Force Awakens, it is nevertheless a pretty good film with more surprises than expected.&lt;/p&gt;</pre>
-
-             <div class="clearfix section--demo">
-               <h1 class="oden-athena__splash-title">Star Wars</h1>
-               <p class="oden-athena__splash-lead">Star Wars is an American epic space-opera media franchise created by George Lucas. The franchise began with the eponymous 1977 film and quickly became a worldwide pop-culture phenomenon. There are 9 episodes collectively, though some consider only the original three to be the "true" Star Wars. </p>
-             </div>
-
-            </section>
-
-
-            <section class="oden-athena__section no-bottom-padding">
-              <h3 class="section__title">Section, Section Title and Section Lead</h3>
-              <p class="section__text">A section is a natural containment of a 2<sup>nd</sup> level block of content. Sections can be white or dark. You should use white most of the time to provide some contrast against the site-wide offwhite background, and choose dark sparingly. Sections have a <span class="oden-athena__with-text-emphasis">section title</span> &mdash; a title with an orange overbar and a <span class="oden-athena__with-text-emphasis">section lead</span> &mdash; a description that should follow the section title.</p>
-
-             <pre>
- &lt;section class="oden-athena__section oden-athena__section--light"&gt;
-   &lt;h3 class="oden-athena__section__title">Episode VIII &mdash; The Last Jedi&lt;/h3&gt;
-   &lt;p class="oden-athena__section__lead">Instead of Rey, could Leia have been the originally-intended "Last Jedi"? The Last Jedi is a sequel to the Force Awakens and is the second to last episode of the Skywalker saga. Not quite as good as The Force Awakens, it is nevertheless a pretty good film with more surprises than expected.&lt;/p&gt;
- &lt;/section&gt;</pre>
-
-              <div class="section--demo oden-athena__section--light">
-                <h3 class="oden-athena__section__title">Episode VIII &mdash; The Last Jedi</h3>
-                <p class="oden-athena__section__lead">Instead of Rey, could Leia have been the originally-intended "Last Jedi"? The Last Jedi is a sequel to the Force Awakens and is the second to last episode of the Skywalker saga. Not quite as good as The Force Awakens, it is nevertheless a pretty good film with more surprises than expected.</p>
+              <div class="oden-athena__section bg-white">
+                <h2 class="oden-athena__section__title">Characters in Star Wars</h2>
+                <p class="oden-athena__section__lead">We discuss all the characters that have ever appeared in all the movies. Fun fact &mdash; who is the sole character that has appeared in every single movie?</p>
+                <p class="oden-athena__section__lead">More stuff below, images, text, etc.</p>
               </div>
+            </section>
+
+            <section class="section" id="components--declarative-box">
+              <h2 class="section__title">Declarative box</h2>
+              <p class="section__text">A declarative box is used when you want to showcase something, but not in a super-detailed way. A declarative box has an <a class="oden-athena__with-text-underline" href="https://uxmovement.com/content/how-you-can-aid-user-scanning-by-using-eyebrow-headlines/">eyebrow</a> &mdash; a catchy 3 word or fewer phrase or category names, a title and a lead. </p>
+
+              <a href="" class="to-code-link">View code &rarr;</a>
+
+              <div class="grid-x">
+                <div class="cell medium-10 large-8">
+                  <div class="oden-athena__declarative-box bg-white">
+                    <p class="oden-athena__declarative-box__eyebrow">Late-breaking news</p>
+                    <h2 class="oden-athena__declarative-box__title">Record-breaking gymnastics tumble smash existing grading scales</h2>
+                    <p class="oden-athena__declarative-box__lead">The triple-double will now be called the Biles II in honor of the gymnast</p>
+                    <p class="oden-athena__declarative-box__link-out"><a class="oden-athena__with-text-underline" href="">Read more &rarr;</a></p>
+                  </div>
+                </div>
+              </div>
+
 
             </section>
 
@@ -102,6 +117,9 @@ Designing a good hyperlink is not as simply as one would imagine. For the intric
       </div>
 
     </div>
+
+    <script src="/js/lib/prism.js"></script>
+    <script src="/js/lib/masonry.pkgd.min.js"></script>
 
 
   </body>
