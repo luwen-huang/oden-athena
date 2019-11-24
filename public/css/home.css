@@ -30,6 +30,10 @@ body {
   padding-bottom: 0;
 }
 
+.margin-bottom {
+  margin-bottom: 1.5em;
+}
+
 
 .section__title {
   margin-bottom: 1.5rem;
@@ -86,4 +90,10 @@ pre {
   margin-left: 1em;
   margin-bottom: calc(1.5em - .85em)
 
+}
+
+.example-1 {
+  background-image: url('/images/declarative-box__non-overlap.png');
+  background-color: #fff;
+  background-position: 50%;
 }

@@ -91,6 +91,7 @@
   color: #555; }
 
 .oden-athena__declarative-box {
+  position: relative;
   padding: 3em 1.5em; }
 
 .oden-athena__declarative-box__eyebrow {
@@ -108,3 +109,18 @@
 
 .oden-athena__declarative-box__link-out {
   margin-top: 3em; }
+
+.oden-athena__declarative-box--non-overlap .oden-athena__declarative-box__image {
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.oden-athena__declarative-box--overlap-transparent .oden-athena__declarative-box__image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.oden-athena__declarative-box--overlap-transparent {
+  opacity: .5; }

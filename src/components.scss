@@ -55,6 +55,7 @@
 // ----- declarative box ----
 
 .declarative-box {
+  position: relative;
   padding: 3em 1.5em;
 }
 
@@ -75,4 +76,22 @@
 
 .declarative-box__link-out {
   margin-top: 3em;
+}
+
+.declarative-box--non-overlap .declarative-box__image {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.declarative-box--overlap-transparent .declarative-box__image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.declarative-box--overlap-transparent {
+  opacity: .5;
 }
