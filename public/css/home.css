@@ -15,12 +15,20 @@ body {
   margin-right: auto;
 }
 
+.no-top-padding {
+  padding-top: 0;
+}
+
 .no-bottom-padding {
   padding-bottom: 0;
 }
 
 .margin-bottom {
   margin-bottom: 1.5em;
+}
+
+.oden-athena__with-text-underline {
+  background-position: 0 1.04em;
 }
 
 /* ----- section ------*/

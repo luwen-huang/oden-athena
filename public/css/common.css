@@ -4,6 +4,6 @@
 @import './lib/oden-athena/css/typography.css';
 @import './lib/oden-athena/css/components.css';
 
-
-@import './_brick.css';
+@import './_basicSection.css';
 @import './_declarativeBox.css';
+@import './_brick.css';
