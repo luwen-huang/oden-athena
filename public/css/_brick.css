@@ -1,0 +1,10 @@
+.oden-athena__brick-collection {
+  display: block;
+  margin: 3em auto;
+  width: 80%;
+}
+
+.oden-athena__brick-item {
+  font-size: .85em;
+  width: 45%;
+}

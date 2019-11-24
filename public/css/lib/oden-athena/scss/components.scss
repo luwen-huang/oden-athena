@@ -56,7 +56,7 @@
 
 .declarative-box {
   position: relative;
-  padding: 3em 1.5em;
+  padding: 3em 2em;
 }
 
 .declarative-box__eyebrow {
@@ -71,27 +71,10 @@
   line-height: 1.3;
   font-weight: 570;
   color: #bf5700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
 }
 
 .declarative-box__link-out {
   margin-top: 3em;
-}
-
-.declarative-box--non-overlap .declarative-box__image {
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.declarative-box--overlap-transparent .declarative-box__image {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.declarative-box--overlap-transparent {
-  opacity: .5;
+  margin-bottom: 0;
 }

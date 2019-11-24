@@ -1,0 +1,24 @@
+
+.oden-athena__declarative-box.bg-dark {
+  background: #333f48;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.oden-athena__declarative-box.bg-dark .oden-athena__declarative-box__lead {
+  color: #eee;
+}
+
+.oden-athena__declarative-box.bg-dark .oden-athena__with-text-underline {
+  text-shadow: 1px 1px #333f48, 1px -1px #333f48, -1px 1px #333f48, -1px -1px #333f48;
+}
+
+
+.oden-athena__declarative-box__background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/declarative-box__maincampus.jpg');
+  background-color: #fff;
+  background-position: 50%;
+  min-height: 200px;
+}

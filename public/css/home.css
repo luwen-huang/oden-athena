@@ -15,23 +15,23 @@ body {
   margin-right: auto;
 }
 
-.section {
-  padding-top: 3em;
-  padding-bottom: 3em;
-}
-
-.bg-white {
-  background: #fff;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-}
-
 .no-bottom-padding {
   padding-bottom: 0;
 }
 
 .margin-bottom {
   margin-bottom: 1.5em;
+}
+
+/* ----- section ------*/
+
+.bg-white {
+  background: #fff;
+}
+
+.section {
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 
@@ -44,37 +44,8 @@ body {
   margin-bottom: 1.6em;
 }
 
-.to-code-link {
-  display: block;
-  margin-bottom: calc(1.5rem*2 - .85em);
-  font-size: .85em;
-}
 
-.oden-athena__brick-collection {
-  display: block;
-  margin: 3em auto;
-  width: 80%;
-}
-
-.oden-athena__brick-item {
-  font-size: .85em;
-  width: 45%;
-}
-
-/*code {
-  font-size: .85em;
-  display: inline-block;
-  margin-bottom: calc(1.6rem - .889em);
-}
-
-pre {
-  font-size: .85em;
-  display: block;
-  background: #e5e5e5;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-}*/
-
+/*---- TOC ---- */
 
 .toc {
   padding: 3em 1.5em;
@@ -92,8 +63,13 @@ pre {
 
 }
 
-.example-1 {
-  background-image: url('/images/declarative-box__non-overlap.png');
-  background-color: #fff;
-  background-position: 50%;
+.component-properties li {
+  margin-bottom: 0;
+}
+
+
+.to-code-link {
+  display: block;
+  margin-bottom: calc(1.5rem*2 - .85em);
+  font-size: .85em;
 }

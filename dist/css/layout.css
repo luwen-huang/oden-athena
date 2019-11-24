@@ -12,8 +12,8 @@
   clear: both; }
 
 .oden-athena__section {
-  padding-top: 6em;
-  padding-bottom: 6em; }
+  background: #fff;
+  padding: 6em 1.5em; }
 
 .oden-athena__section__title {
   font-size: 1.777em;
