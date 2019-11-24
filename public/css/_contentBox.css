@@ -1,0 +1,13 @@
+
+
+.oden-athena__content-box.horizontal {
+  display: flex;
+}
+
+.oden-athena__content-box__image-bg {
+  min-width: 40%;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/content-box__undergrad.jpg');
+}
