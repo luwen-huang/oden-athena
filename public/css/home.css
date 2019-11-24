@@ -7,6 +7,15 @@ body {
   line-height: 1.6;
 }
 
+.header {
+  background: #fff;
+  padding: 1.5em 3em;
+}
+
+.header__logo {
+  width: 180px;
+}
+
 .wrapper {
   height: 100%;
   max-width: 1200px;
@@ -37,6 +46,13 @@ body {
   background: #fff;
 }
 
+.demo-box {
+  padding: 3em 2em;
+  background: #fff;
+  max-width: 60%;
+  /*margin-bottom: 3em;*/
+}
+
 .section {
   padding-top: 3em;
   padding-bottom: 3em;
@@ -57,11 +73,18 @@ body {
 
 .toc {
   padding: 3em 1.5em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .toc__heading {
   font-size: .85em;
   margin-bottom: calc(1.5em - .85em)
+}
+
+.toc__heading a {
+  font-weight: 600;
 }
 
 .toc__sub-heading {

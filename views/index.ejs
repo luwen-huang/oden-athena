@@ -10,20 +10,27 @@
   </head>
 
   <body>
+
+    <header class="header">
+      <img class="header__logo" src="/images/orange_dol_wide@2x.png" />
+
+    </header>
+
     <div class="wrapper">
       <div class="grid-x">
         <div class="cell medium-2 large-3">
-          <div class=" toc">
+          <div class=" toc" id="toc">
             <section class="">
-              <p class="toc__heading">Fundamentals</p>
-              <p class="toc__sub-heading"><a href="#typography">Colors</a></p>
-              <p class="toc__sub-heading"><a href="#typography">Typography</a></p>
-              <p class="toc__sub-heading"><a href="#typography">Layout</a></p>
+              <p class="toc__heading"><a href="#fundamentals">Fundamentals</a></p>
+              <p class="toc__sub-heading"><a href="#fundamentals--links">Headings</a></p>
+              <p class="toc__sub-heading"><a href="#fundamentals--links">Links</a></p>
+              <p class="toc__sub-heading"><a href="#fundamentals--links">Emphasis</a></p>
             </section>
             <section class="">
-              <p class="toc__heading">Components</p>
+              <p class="toc__heading"><a href="#components">Components</a></p>
               <p class="toc__sub-heading"><a href="#components--basic-section">Basic section</a></p>
               <p class="toc__sub-heading"><a href="#components--declarative-box">Declarative box</a></p>
+              <p class="toc__sub-heading"><a href="#components--content-box">Content box</a></p>
               <p class="toc__sub-heading"><a href="#components--brick">Brick</a></p>
             </section>
 
@@ -35,8 +42,40 @@
             <h1 class="oden-athena__splash-title">Oden Athena</h1>
             <p class="section__text">
               Hello! This is the documentation for Oden Athena. Oden Athena is the component library for frontend components for the Oden webpages.
-              Currently, it's a collection of CSS classes. However, if we are comfortable requiring Javascript and latest browsers, we can instead use Shadow DOM components.
             </p>
+            <p class="section__text">
+            </p>
+          </section>
+
+          <section class="section" id="fundamentals">
+            <section class="section" id="fundamentals--headings">
+              <h2 class="section__title">Headings</h2>
+              <p class="section__text">There are three different sizes for three headings: h1, h2, and h3:</p>
+              <div class="demo-box">
+                <h1>h1 for page titles</h1>
+                <h2>h2 for section titles</h2>
+                <h3>h3 for declarative box and content box titles</h3>
+                <p class="section__text">p for paragraph text</p>
+              </div>
+            </section>
+
+            <section class="section" id="fundamentals--links">
+              <h2 class="section__title">Links</h2>
+              <p class="section__text">Textual links should be underlined, to draw attention to a single call-to-action: </p>
+              <div class="demo-box">
+                <a class="oden-athena__with-text-underline">Learn more &rarr;</a>
+              </div>
+            </section>
+
+            <section class="section" id="fundamentals--emphasis">
+              <h2 class="section__title">Emphasis</h2>
+
+              <p class="section__text">Links are different from emphases, which are words or short phrases underlined but are not clickable: </p>
+              <div class="demo-box">
+                <p >A physics-based model is a representation of the governing laws of nature that innately embeds the concepts of <span class="oden-athena__with-text-emphasis">time, space and causality</span>. A physics-based model incorporates governing principles and laws of nature. These laws of nature define how physical, chemical and biological processes evolve.</p>
+              </div>
+            </section>
+
           </section>
 
 
@@ -48,7 +87,6 @@
             <% include _contentBox %>
 
             <% include _brick %>
-
           </section>
 
         </div>
@@ -60,6 +98,7 @@
 
     <script src="/js/lib/prism.js"></script>
     <script src="/js/lib/masonry.pkgd.min.js"></script>
+    <script src="/js/home.js"></script>
 
 
   </body>

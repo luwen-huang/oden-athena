@@ -11,20 +11,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .oden-athena__scale-6 {
   font-size: 4.209em;
-  margin-bottom: calc(4.209em - 4.209em); }
+  margin-bottom: calc(1.5rem*6 - 4.209em); }
 
 .oden-athena__scale-5 {
   font-size: 3.157em;
-  margin-bottom: calc(1.5rem*4 - 3.157em); }
+  margin-bottom: calc(1.5rem*5 - 3.157em); }
 
 h1 {
   font-size: 2.369em;
-  margin-bottom: calc(1.5rem*3 - 2.369em);
+  margin-bottom: calc(1.5rem*5 - 2.369em);
   line-height: 1.5; }
 
 h2 {
   font-size: 1.777em;
-  margin-bottom: calc(1.5rem*2 - 1.777em);
+  margin-bottom: calc(1.5rem*3 - 1.777em);
   line-height: 1.5; }
 
 h3, h4, h5, h6 {
@@ -72,7 +72,6 @@ a:hover {
 
 .oden-athena__with-text-emphasis {
   background-image: linear-gradient(to right, rgba(216, 99, 3, 0.5) 100%, transparent 100%);
-  background-position: 0 1em;
+  background-position: 0 .76em;
   background-repeat: repeat-x;
-  background-size: 8px 6px;
-  text-shadow: 1px 1px #fcfcfc, 1px -1px #fcfcfc, -1px 1px #fcfcfc, -1px -1px #fcfcfc; }
+  background-size: 8px 6px; }
