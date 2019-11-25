@@ -55,21 +55,22 @@
   color: #eaeaea; }
 
 .oden-athena__blockquote {
-  padding-top: calc(1.45rem*2 - 1.333rem);
+  padding-top: .75em;
   padding-left: 2em;
   padding-right: 2em;
-  padding-bottom: calc(1.45rem - 1.333rem);
-  margin-top: calc(1.45rem*3 - 1.333rem);
-  margin-bottom: calc(1.45rem*3 - 1.333rem); }
+  padding-bottom: .75em;
+  margin-top: .75em;
+  margin-bottom: .75em; }
 
 .oden-athena__blockquote__quote {
   color: #444;
   font-size: 1em;
-  margin-bottom: calc(1.45rem*3 - 1.333rem); }
+  margin-bottom: 1.5em; }
 
 .oden-athena__blockquote__cite {
   color: #666;
-  font-size: .85rem; }
+  font-size: .85em;
+  margin-bottom: 0; }
 
 /* --- brick --- */
 .oden-athena__masonry-grid {
