@@ -53,6 +53,23 @@ body {
   /*margin-bottom: 3em;*/
 }
 
+.splash-box-wrapper {
+  background: #fff;
+  max-width: 100%;
+  padding: 3em 3em 0 3em;
+  margin-bottom: 1.5em;
+}
+
+.splash-box-inner {
+  padding: 6em 10% 3em 10%;
+  font-size: .5em;
+  height: 100%;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
 .section {
   padding-top: 3em;
   padding-bottom: 3em;

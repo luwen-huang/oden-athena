@@ -36,6 +36,9 @@
 .oden-athena__section--dark .oden-athena__section__title {
   color: #ddd; }
 
+.oden-athena__section--dark .oden-athena__section__text {
+  color: #ddd; }
+
 .oden-athena__splash-title {
   margin-top: 1.5rem;
   font-weight: 700;
@@ -47,3 +50,6 @@
   line-height: 1.6;
   font-size: 1.333rem;
   margin-bottom: calc(1.6rem*3 - 1.333rem); }
+
+.oden-athena__section--dark .oden-athena__splash-title, .oden-athena__section--dark .oden-athena__splash-lead {
+  color: #eaeaea; }

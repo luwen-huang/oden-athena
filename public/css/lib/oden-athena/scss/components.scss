@@ -1,5 +1,7 @@
 @import './layout.scss';
 
+@import './_blockQuote.scss';
+
 /* --- brick --- */
 
 .masonry-grid {
@@ -21,22 +23,32 @@
   cursor: pointer;
 }
 
+.brick-item p:last-child {
+  margin-bottom: 0;
+}
+
+
 .brick__item-image {
   margin-bottom: 1em;
   width: 100%;
 }
 
-
-.brick-item p:last-child {
-  margin-bottom: 0;
-}
-
 .brick__item-name {
+  line-height: 1.4;
   color: #bf7500;
+  font-weight: 500;
 }
 
 .brick__item-description {
   font-size: .85em;
+}
+
+.brick__item-eyebrow {
+  font-size: .85em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #00a9b7;
 }
 
 .brick__item-meta {
@@ -57,6 +69,10 @@
 .declarative-box {
   position: relative;
   padding: 3em 2em;
+}
+
+.declarative-box--dark {
+  background-color: #333f48;
 }
 
 .declarative-box__eyebrow {

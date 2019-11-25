@@ -54,6 +54,10 @@
   color: #ddd;
 }
 
+.section--dark .section__text {
+  color: #ddd;
+}
+
 // --- splash sections ----
 
 
@@ -69,4 +73,8 @@
   line-height: 1.6;
   font-size: 1.333rem;
   margin-bottom: calc(1.6rem*3 - 1.333rem);
+}
+
+.section--dark .splash-title, .section--dark .splash-lead {
+  color: #eaeaea;
 }

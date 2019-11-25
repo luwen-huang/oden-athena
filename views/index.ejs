@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Oden Athena | A smashing frontend library for Oden web</title>
 
     <link rel='stylesheet' href='/css/lib/foundation.min.css' />
     <link rel='stylesheet' href='/css/lib/prism.css' />
@@ -33,6 +33,10 @@
               <p class="toc__sub-heading"><a href="#components--content-box">Content box</a></p>
               <p class="toc__sub-heading"><a href="#components--brick">Brick</a></p>
             </section>
+            <section class="">
+              <p class="toc__heading"><a href="#splashes">Splash layouts</a></p>
+              <p class="toc__sub-heading"><a href="#splashes--basic">Basic</a></p>
+            </section>
 
           </div>
         </div>
@@ -41,13 +45,16 @@
           <section class="section">
             <h1 class="oden-athena__splash-title">Oden Athena</h1>
             <p class="section__text">
-              Hello! This is the documentation for Oden Athena. Oden Athena is the component library for frontend components for the Oden webpages.
+              Hello! This is the documentation for Oden Athena. Oden Athena is the slightly-opinionated component library for frontend components for the updated Oden webpages.
             </p>
             <p class="section__text">
             </p>
           </section>
 
           <section class="section" id="fundamentals">
+            <h2 class="section__title">Fundamentals</h2>
+            <p class="section__text">Fundamental style rules for typography </p>
+
             <section class="section" id="fundamentals--headings">
               <h2 class="section__title">Headings</h2>
               <p class="section__text">There are three different sizes for three headings: h1, h2, and h3:</p>
@@ -61,9 +68,22 @@
 
             <section class="section" id="fundamentals--links">
               <h2 class="section__title">Links</h2>
-              <p class="section__text">Textual links should be underlined, to draw attention to a single call-to-action: </p>
+              <p class="section__text">Textual links should be underlined and contain arrows, to draw attention to a single call-to-action. Use these links for links, not buttons. The only time when textual links should not be underlined or have an arrow is if they appear in the context of a cited source.</p>
               <div class="demo-box">
                 <a class="oden-athena__with-text-underline">Learn more &rarr;</a>
+              </div>
+            </section>
+
+            <section class="section" id="fundamentals--block-quotes">
+              <h2 class="section__title">Block Quotes</h2>
+              <p class="section__text">Quotes from external sources should be styled distinctly different from the main text. </p>
+              <a href="" class="to-code-link">View CSS &rarr;</a>
+              <div class="demo-box">
+                <blockquote class="oden-athena__blockquote">
+                  <p class="oden-athena__blockquote__quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p class="oden-athena__blockquote__cite"><a class="">How to Build Artificial Intelligence We Can Trust,</a> The New York Times</p>
+                </blockquote>
+
               </div>
             </section>
 
@@ -80,6 +100,9 @@
 
 
           <section class="section" id="components">
+            <h2 class="section__title">Components</h2>
+            <p class="section__text">For when you need to combine text and images</p>
+
             <% include _basicSection %>
 
             <% include _declarativeBox %>
@@ -87,6 +110,16 @@
             <% include _contentBox %>
 
             <% include _brick %>
+          </section>
+
+          <section class="section" id="splashes">
+            <h2 class="section__title">Splash Layouts</h2>
+            <p class="section__text">Because designing splashes is hard, and we need a variety of them so the site doesn't feel monotonous.</p>
+
+            <% include _splashBasic %>
+
+            <% include _splashSplitScreen %>
+
           </section>
 
         </div>

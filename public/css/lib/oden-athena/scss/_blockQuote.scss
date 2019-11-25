@@ -1,0 +1,22 @@
+
+
+.blockquote {
+  padding-top:  calc(1.45rem*2 - 1.333rem);
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: calc(1.45rem - 1.333rem);
+
+  margin-top: calc(1.45rem*3 - 1.333rem);
+  margin-bottom: calc(1.45rem*3 - 1.333rem);
+}
+
+.blockquote__quote {
+  color: #444;
+  font-size: 1em;
+  margin-bottom: calc(1.45rem*3 - 1.333rem);
+}
+
+.blockquote__cite {
+  color: #666;
+  font-size: .85rem;
+}

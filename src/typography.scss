@@ -16,23 +16,29 @@ h1, h2, h3, h4, h5, h6 {
 .scale-6 {
   font-size: 4.209em;
   margin-bottom: calc(1.5rem*6 - 4.209em);
+  margin-bottom: 1.5em;
+
 }
 
 .scale-5 {
   font-size: 3.157em;
   margin-bottom: calc(1.5rem*5 - 3.157em);
+  margin-bottom: 1.5em;
+
 }
 
 
 h1 {
     font-size: 2.369em;
     margin-bottom: calc(1.5rem*5 - 2.369em);
+    margin-bottom: 1.5em;
     line-height: 1.5;
 }
 
 h2 {
     font-size: 1.777em;
     margin-bottom: calc(1.5rem*3 - 1.777em);
+    margin-bottom: 1.5em;
     line-height: 1.5;
 
 }
@@ -40,6 +46,8 @@ h2 {
 h3, h4, h5, h6 {
     font-size: 1.333rem;
     margin-bottom: calc(1.5rem*2 - 1.333em);
+    margin-bottom: 1.5em;
+
     line-height: 1.5;
 }
 
