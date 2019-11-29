@@ -1,6 +1,14 @@
 html {
   font-size: 16px; }
 
+@media screen and (min-width: 640px) and (max-width: 850px) {
+  html {
+    font-size: 14px; } }
+
+@media screen and (max-width: 639px) {
+  html {
+    font-size: 13px; } }
+
 body {
   font-family: 'Libre Franklin', sans-serif; }
 
@@ -38,8 +46,9 @@ h3, h4, h5, h6 {
   line-height: 1.5; }
 
 p, li {
-  font-size: 1rem;
+  font-size: 1em;
   line-height: 1.6;
+  margin-bottom: 1.6em;
   color: #333; }
 
 .oden-athena__large {

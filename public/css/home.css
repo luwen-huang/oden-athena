@@ -108,7 +108,12 @@ body {
   font-size: .85em;
   margin-left: 1em;
   margin-bottom: calc(1.5em - .85em)
+}
 
+.toc a.is-active {
+  line-height: .6;
+  display: inline-block;
+  border-bottom: 3px solid rgba(248, 151, 31 .5);
 }
 
 .component-properties li {

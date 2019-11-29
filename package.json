@@ -29,5 +29,8 @@
     "morgan": "^1.9.1",
     "nodemon": "^2.0.1",
     "path": "^0.12.7"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
