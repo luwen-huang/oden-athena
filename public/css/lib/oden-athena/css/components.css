@@ -80,6 +80,15 @@ body {
 .oden-athena__content-box {
   position: relative; }
 
+.oden-athena__content-box--horizontal {
+  display: flex; }
+
+.oden-athena__content-box__image-bg {
+  min-width: 40%;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .oden-athena__content-box__image {
   width: 100%; }
 

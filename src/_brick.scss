@@ -1,0 +1,69 @@
+/* --- brick --- */
+
+.masonry-grid {
+  list-style: none;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  @include group;
+}
+
+
+.brick-item {
+  float: left;
+  padding: 1.5em 1em;
+
+  margin-bottom: 16px;
+  margin-right: 10px;
+
+  background: #fff;
+  cursor: pointer;
+}
+
+.brick-item p:last-child {
+  margin-bottom: 0;
+}
+
+.brick__item-image {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.brick-item--horizontal .brick__item-image {
+}
+
+.brick-item--horizontal .brick__item-image {
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.brick__item-name {
+  line-height: 1.4;
+  color: #bf7500;
+  font-weight: 500;
+}
+
+.brick__item-description {
+  font-size: .85em;
+}
+
+.brick__item-eyebrow {
+  font-size: .85em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #00a9b7;
+}
+
+.brick__item-meta {
+  color: #666;
+  font-size: .75em;
+}
+
+.brick-item:hover .brick__item-name {
+  color: #f8971f;
+}
+
+.brick-item:hover .brick__item-description {
+  color: #555;
+}

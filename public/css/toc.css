@@ -1,0 +1,40 @@
+/*---- TOC ---- */
+
+.toc {
+  padding: 3em 1.5em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.toc__heading {
+  font-size: .85em;
+  margin-bottom: calc(1.5em - .85em)
+}
+
+.toc__heading a {
+  font-weight: 600;
+}
+
+.toc__sub-heading {
+  font-size: .85em;
+  margin-left: 1em;
+  margin-bottom: calc(1.5em - .85em)
+}
+
+.toc a.is-active {
+  line-height: .6;
+  display: inline-block;
+  border-bottom: 3px solid rgba(248, 151, 31 .5);
+}
+
+.component-properties li {
+  margin-bottom: 0;
+}
+
+
+.to-code-link {
+  display: block;
+  margin-bottom: calc(1.5rem*2 - .85em);
+  font-size: .85em;
+}

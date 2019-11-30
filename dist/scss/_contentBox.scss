@@ -4,6 +4,17 @@
   position: relative;
 }
 
+.content-box--horizontal {
+  display: flex;
+}
+
+.content-box__image-bg {
+  min-width: 40%;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .content-box__image {
   width: 100%;
 }
