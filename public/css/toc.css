@@ -23,7 +23,7 @@
 }
 
 .toc a.is-active {
-  line-height: .6;
+  line-height: .3;
   display: inline-block;
-  border-bottom: 3px solid rgba(248, 151, 31 .5);
+  border-bottom: .5em solid rgba(248, 151, 31, .5);
 }

@@ -1,18 +1,3 @@
-body {
-  overflow-x: hidden; }
-
-.oden-athena__bg-wrapper {
-  height: 100%;
-  width: 100%;
-  content: "";
-  display: table;
-  clear: both; }
-
-.oden-athena__group:after {
-  content: "";
-  display: table;
-  clear: both; }
-
 .oden-athena__section {
   padding: 6em 2em; }
 
@@ -55,3 +40,13 @@ body {
 
 .oden-athena__section--dark .oden-athena__splash__title, .oden-athena__section--dark .oden-athena__splash__lead {
   color: #eaeaea; }
+
+body {
+  overflow-x: hidden; }
+
+.oden-athena__bg-wrapper {
+  height: 100%;
+  width: 100%;
+  content: "";
+  display: table;
+  clear: both; }

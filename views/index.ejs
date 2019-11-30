@@ -12,116 +12,81 @@
   <body>
 
     <header class="header">
-      <img class="header__logo" src="/images/orange_dol_wide@2x.png" />
-
+      <a class="header__logo-text" href='/'>
+        <img class="header__logo" src="/images/orange_dol_wide@2x.png" />
+        <p class="header__text">Oden Athena</p>
+      </a>
     </header>
 
     <div class="wrapper">
-      <div class="grid-x">
-        <div class="cell medium-2 large-3">
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-3 large-3">
           <div class=" toc" id="toc">
-            <section class="">
-              <p class="toc__heading"><a href="#fundamentals">Fundamentals</a></p>
-              <p class="toc__sub-heading"><a href="#fundamentals--links">Headings</a></p>
-              <p class="toc__sub-heading"><a href="#fundamentals--links">Links</a></p>
-              <p class="toc__sub-heading"><a href="#fundamentals--links">Emphasis</a></p>
+            <section class="" id="fundamentals">
+              <p class="toc__heading"><a href="/fundamentals">Fundamentals</a></p>
+              <p class="toc__sub-heading"><a href="/fundamentals#headings">Headings</a></p>
+              <p class="toc__sub-heading"><a href="/fundamentals#links">Links</a></p>
+              <p class="toc__sub-heading"><a href="/fundamentals#emphasis">Emphasis</a></p>
             </section>
-            <section class="">
-              <p class="toc__heading"><a href="#components">Components</a></p>
-              <p class="toc__sub-heading"><a href="#components--basic-section">Basic section</a></p>
-              <p class="toc__sub-heading"><a href="#components--declarative-box">Declarative box</a></p>
-              <p class="toc__sub-heading"><a href="#components--content-box">Content box</a></p>
-              <p class="toc__sub-heading"><a href="#components--brick">Brick</a></p>
+            <section class="" id="components">
+              <p class="toc__heading"><a href="/components">Components</a></p>
+              <p class="toc__sub-heading"><a href="/components#declarative-box">Declarative box</a></p>
+              <p class="toc__sub-heading"><a href="/components#content-box">Content box</a></p>
+              <p class="toc__sub-heading"><a href="/components#brick">Brick</a></p>
             </section>
-            <section class="">
-              <p class="toc__heading"><a href="#splashes">Splash layouts</a></p>
-              <p class="toc__sub-heading"><a href="#splashes--basic">Basic</a></p>
+            <section class="" id="layout">
+              <p class="toc__heading"><a href="/layout">Page layout</a></p>
+              <p class="toc__sub-heading"><a href="/layout#basic-section">Basic section</a></p>
+              <p class="toc__sub-heading"><a href="/layout#basic-splash">Basic splash</a></p>
             </section>
 
           </div>
         </div>
 
-        <div class="cell medium-10 large-9">
-          <section class="section">
-            <h1 class="oden-athena__splash-title">Oden Athena</h1>
-            <p class="section__text">
-              Hello! This is the documentation for Oden Athena. Oden Athena is the slightly-opinionated component library for frontend components for the updated Oden webpages.
-            </p>
-            <p class="section__text">Why this exists &mdash; so that styles can live in one central place and be namespaced so that CSS conflicts don't happen and we can have efficient updates whenever we need to change styles.
-            </p>
-          </section>
+        <div class="cell medium-9 large-8">
 
-          <!-- <section class="section" id="fundamentals">
-            <h2 class="section__title">Fundamentals</h2>
-            <p class="section__text">Fundamental style rules for typography </p>
-
-            <section class="section" id="fundamentals--headings">
-              <h2 class="section__title">Headings</h2>
-              <p class="section__text">There are three different sizes for three headings: h1, h2, and h3:</p>
-              <div class="demo-box">
-                <h1>h1 for page titles</h1>
-                <h2>h2 for section titles</h2>
-                <h3>h3 for declarative box and content box titles</h3>
-                <p class="section__text">p for paragraph text</p>
-              </div>
+          <%if (page === 'home') { %>
+            <section class="section">
+              <h1 class="oden-athena__splash-title">Oden Athena</h1>
+              <p class="section__text">
+                Hello! This is the documentation for Oden Athena. Oden Athena is the slightly-opinionated component library for frontend components for the updated Oden webpages. Why this exists &mdash; so that styles can live in one central place and be namespaced so that CSS conflicts don't happen and we can have efficient updates whenever we need to change styles.
+              </p>
             </section>
+          <% } %>
 
-            <section class="section" id="fundamentals--links">
-              <h2 class="section__title">Links</h2>
-              <p class="section__text">Textual links should be underlined and contain arrows, to draw attention to a single call-to-action. Use these links for links, not buttons. The only time when textual links should not be underlined or have an arrow is if they appear in the context of a block quote.</p>
-              <div class="demo-box">
-                <a class="oden-athena__with-text-underline">Learn more &rarr;</a>
-              </div>
+
+
+          <%if (page === 'fundamentals') { %>
+            <% include _fundamentals %>
+          <% } %>
+
+          <%if (page === 'components') { %>
+            <section class="section" id="components">
+              <h2 class="section__title">Components</h2>
+              <p class="section__text">In this section, there are three components that look very much alike: Declarative Box, Content Box, and Brick. Their difference is in the granularity of what it is you're showing. <b>Declarative Boxes</b> are meant to be large, full page-width items; the intent is for the user to focus on that single item only. <b>Content Boxes</b> are meant for for medium-pieced items, when you want to show a collection of ~3-4 objects. <b>Bricks</b> are meant to show small items, such as news objects and other things you might want to put into a list. Even though they may look alike now, they will diverge as Content Boxes and Bricks will have more and more details added to them, but not Declarative Boxes, since Declarative Boxes are not meant to flood the user with details at first sight. </p>
+
+
+              <% include _declarativeBox %>
+
+              <% include _contentBox %>
+
+              <% include _brick %>
             </section>
+          <% } %>
 
-            <section class="section" id="fundamentals--block-quotes">
-              <h2 class="section__title">Block Quotes</h2>
-              <p class="section__text">Quotes from external sources should be positioned with plenty of whitespace so that it's clear they're distinct from the main text. </p>
-              <a target="_blank" href="https://github.com/luwen-huang/oden-athena/blob/master/src/_blockQuote.scss" class="to-code-link">View CSS &rarr;</a>
-              <div class="demo-box">
-                <blockquote class="oden-athena__blockquote">
-                  <p class="oden-athena__blockquote__quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <p class="oden-athena__blockquote__cite"><a class="">How to Build Artificial Intelligence We Can Trust,</a> The New York Times</p>
-                </blockquote>
+          <%if (page === 'layout') { %>
+            <section class="section" id="layout">
+              <h2 class="section__title">Page Layout</h2>
+              <p class="section__text">Guidelines for </p>
 
-              </div>
+              <% include _basicSection %>
+
+              <!-- <% include _splashBasic %>
+
+              <% include _splashSplitScreen %> -->
+
             </section>
-
-            <section class="section" id="fundamentals--emphasis">
-              <h2 class="section__title">Emphasis</h2>
-
-              <p class="section__text">Links are different from emphases, which are words or short phrases underlined but are not clickable: </p>
-              <div class="demo-box">
-                <p >A physics-based model is a representation of the governing laws of nature that innately embeds the concepts of <span class="oden-athena__with-text-emphasis">time, space and causality</span>. A physics-based model incorporates governing principles and laws of nature. </p>
-              </div>
-            </section>
-
-          </section> -->
-
-
-          <section class="section" id="components">
-            <h2 class="section__title">Components</h2>
-            <p class="section__text">In this section, there are three components that look very much alike: Declarative Box, Content Box, and Brick. Their difference is in the granularity of what it is you're showing. <b>Declarative Boxes</b> are meant to be large, full page-width items; the intent is for the user to focus on that single item only. <b>Content Boxes</b> are meant for for medium-pieced items, when you want to show a collection of ~3-4 objects. <b>Bricks</b> are meant to show small items, such as news objects and other things you might want to put into a list. Even though they may look alike now, they will diverge as Content Boxes and Bricks will have more and more details added to them, but not Declarative Boxes, since Declarative Boxes are not meant to flood the user with details at first sight. </p>
-
-            <% include _basicSection %>
-
-            <% include _declarativeBox %>
-
-            <% include _contentBox %>
-
-            <% include _brick %>
-          </section>
-
-          <section class="section" id="splashes">
-            <h2 class="section__title">Splash Layouts</h2>
-            <p class="section__text">Because designing splashes is hard, and we need a variety of them so the site doesn't feel monotonous.</p>
-
-            <!-- <% include _splashBasic %>
-
-            <% include _splashSplitScreen %> -->
-
-          </section>
-
+          <% } %>
         </div>
 
 

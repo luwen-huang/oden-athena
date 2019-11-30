@@ -1,0 +1,14 @@
+@import './_basicSection.scss';
+@import './_basicSplash.scss';
+
+body {
+  overflow-x: hidden;
+}
+
+.bg-wrapper {
+  height: 100%;
+  width: 100%;
+  content: "";
+  display: table;
+  clear: both;
+}

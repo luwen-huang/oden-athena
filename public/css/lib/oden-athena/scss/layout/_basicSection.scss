@@ -1,0 +1,36 @@
+// --- basic section ----
+
+.section {
+  padding: 6em 2em;
+}
+
+.section__title {
+  font-size: 1.777em;
+  font-weight: 700;
+  color: #404040;
+  margin-bottom: calc(1.6rem*3 - 1.777em);
+  position: relative;
+}
+
+.section__title::before {
+  content: '';
+  position: absolute;
+  top: -.55em;
+  width: 60px;
+  height: 7px;
+  background: #bf5700;
+}
+
+.section__text {
+  line-height: 1.6;
+  margin-bottom: calc(1.6em*2 - 1rem);
+}
+
+
+.section--dark .section__title {
+  color: #ddd;
+}
+
+.section--dark .section__text {
+  color: #ddd;
+}
