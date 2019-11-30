@@ -84,3 +84,10 @@ body {
   color: #585858;
   margin-bottom: 1.6em;
 }
+
+
+.to-code-link {
+  display: block;
+  margin-bottom: calc(1.5rem*2 - .85em);
+  font-size: .85em;
+}

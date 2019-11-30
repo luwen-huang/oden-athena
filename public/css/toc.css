@@ -27,14 +27,3 @@
   display: inline-block;
   border-bottom: 3px solid rgba(248, 151, 31 .5);
 }
-
-.component-properties li {
-  margin-bottom: 0;
-}
-
-
-.to-code-link {
-  display: block;
-  margin-bottom: calc(1.5rem*2 - .85em);
-  font-size: .85em;
-}

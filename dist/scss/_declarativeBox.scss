@@ -2,7 +2,11 @@
 // ----- declarative box ----
 
 .declarative-box {
+  display: flex;
   position: relative;
+}
+
+.declarative-box__padding-wrapper {
   padding: 3em 2em;
 }
 
@@ -24,4 +28,15 @@
 .declarative-box__link-out {
   margin-top: 1.5em;
   margin-bottom: 0;
+}
+
+.declarative-box__image-bg {
+  min-width: 40%;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.declarative-box--dark .declarative-box__lead {
+  color: #eee;
 }
