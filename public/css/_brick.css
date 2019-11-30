@@ -4,7 +4,11 @@
   width: 80%;
 }
 
-.oden-athena__brick-item {
+.oden-athena__brick {
   font-size: .85em;
   width: 45%;
+}
+
+.oden-athena__brick__image-bg {
+  background-image: url('/images/brick__brownian.png');
 }

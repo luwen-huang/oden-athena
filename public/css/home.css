@@ -85,6 +85,10 @@ body {
   margin-bottom: 1.6em;
 }
 
+code {
+  font-size: .85em;
+}
+
 
 .to-code-link {
   display: block;

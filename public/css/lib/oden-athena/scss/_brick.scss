@@ -8,7 +8,7 @@
 }
 
 
-.brick-item {
+.brick {
   float: left;
   padding: 1.5em 1em;
 
@@ -19,50 +19,56 @@
   cursor: pointer;
 }
 
-.brick-item p:last-child {
+.brick p:last-child {
   margin-bottom: 0;
 }
 
-.brick__item-image {
+.brick__image {
   margin-bottom: 1em;
   width: 100%;
 }
 
-.brick-item--horizontal .brick__item-image {
+.brick--horizontal {
+  display: flex;
 }
 
-.brick-item--horizontal .brick__item-image {
+.brick--horizontal .brick__image-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100px;
+  height: 100%;
+  width: 20%;
   flex-shrink: 0;
   margin-bottom: 0;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
-.brick__item-name {
+.brick__name {
   line-height: 1.4;
   color: #bf7500;
   font-weight: 500;
 }
 
-.brick__item-description {
+.brick__description {
   font-size: .85em;
 }
 
-.brick__item-eyebrow {
+.brick__eyebrow {
   font-size: .85em;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #00a9b7;
 }
 
-.brick__item-meta {
+.brick__meta {
   color: #666;
   font-size: .75em;
 }
 
-.brick-item:hover .brick__item-name {
+.brick:hover .brick__name {
   color: #f8971f;
 }
 
-.brick-item:hover .brick__item-description {
+.brick:hover .brick__description {
   color: #555;
 }
