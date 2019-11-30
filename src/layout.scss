@@ -3,16 +3,6 @@ body {
   overflow-x: hidden;
 }
 
-// clearfix
-@mixin group {
-  .group:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-
 .bg-wrapper {
   height: 100%;
   width: 100%;
@@ -21,6 +11,14 @@ body {
   clear: both;
 }
 
+// clearfix
+@mixin group {
+  .group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 
 .group:after {
   content: "";
