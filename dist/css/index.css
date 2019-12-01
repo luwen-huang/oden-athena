@@ -109,7 +109,7 @@ a:hover {
   background: grey; }
 
 .oden-athena__section {
-  padding: 6em 3em 4.5em 3em; }
+  padding: 6em 3em 1.5em 3em; }
 
 .oden-athena__section__title {
   font-size: 1.777em;
@@ -139,16 +139,48 @@ a:hover {
 .oden-athena__overlapped-image {
   position: relative; }
 
-.oden-athena__overlapped-image--bottom .oden-athena__overlapped-image__overlapping-wrapper {
+.oden-athena__overlapped-image__overlapping-wrapper {
   position: absolute;
-  width: 60%;
-  left: 20%;
-  top: 50%;
-  padding: 6em 3em;
+  padding: 6em 3em 1.5em 3em;
   background: #fff; }
 
+.oden-athena__overlapped-image--bottom {
+  margin-bottom: calc(40% + 3em); }
+
+.oden-athena__overlapped-image--bottom .oden-athena__overlapped-image__overlapping-wrapper {
+  width: 60%;
+  left: 20%;
+  top: 40%; }
+
+.oden-athena__overlapped-image--top {
+  margin-top: 30%;
+  margin-bottom: 3em; }
+
+.oden-athena__overlapped-image--top .oden-athena__overlapped-image__overlapping-wrapper {
+  width: 60%;
+  left: 20%;
+  top: -30%; }
+
+.oden-athena__overlapped-image--left {
+  margin-bottom: 3em; }
+
+.oden-athena__overlapped-image--left .oden-athena__overlapped-image__overlapping-wrapper {
+  top: 10%;
+  width: 90%;
+  left: -10%; }
+
+.oden-athena__overlapped-image--left {
+  margin-bottom: 3em; }
+
+.oden-athena__overlapped-image--right .oden-athena__overlapped-image__overlapping-wrapper {
+  top: 10%;
+  width: 90%;
+  right: -10%; }
+
 @media screen and (max-width: 639px) {
-  .oden-athena__overlapped-image--bottom .oden-athena__overlapped-image__overlapping-wrapper {
+  .oden-athena__overlapped-image {
+    margin-bottom: 0; }
+  .oden-athena__overlapped-image .oden-athena__overlapped-image__overlapping-wrapper {
     position: relative;
     width: 100%;
     left: 0;

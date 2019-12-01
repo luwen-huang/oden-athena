@@ -1,7 +1,7 @@
 // --- top level section ----
 
 .section {
-  padding: 6em 3em 4.5em 3em;
+  padding: 6em 3em 1.5em 3em;
 }
 
 .section__title {
@@ -41,17 +41,68 @@
   position: relative;
 }
 
-.overlapped-image--bottom .overlapped-image__overlapping-wrapper {
+.overlapped-image__overlapping-wrapper {
   position: absolute;
-  width: 60%;
-  left: 20%;
-  top: 50%;
-  padding: 6em 3em;
+  padding: 6em 3em 1.5em 3em;
   background: #fff;
 }
 
+// overlapping from bottom
+
+.overlapped-image--bottom {
+  margin-bottom: calc(40% + 3em);
+}
+
+.overlapped-image--bottom .overlapped-image__overlapping-wrapper {
+  width: 60%;
+  left: 20%;
+  top: 40%;
+}
+
+// overlapping from top
+.overlapped-image--top {
+  margin-top: 30%;
+  margin-bottom: 3em;
+}
+
+.overlapped-image--top .overlapped-image__overlapping-wrapper {
+  width: 60%;
+  left: 20%;
+  top: -30%;
+}
+
+// overlapping from left
+
+.overlapped-image--left {
+  margin-bottom: 3em;
+}
+
+.overlapped-image--left .overlapped-image__overlapping-wrapper {
+  top: 10%;
+  width: 90%;
+  left: -10%;
+}
+
+// overlapping from right
+
+.overlapped-image--left {
+  margin-bottom: 3em;
+}
+
+.overlapped-image--right .overlapped-image__overlapping-wrapper {
+  top: 10%;
+  width: 90%;
+  right: -10%;
+}
+
+// on small screen sizes, everything goes away and reverts back to normal block layout
+
 @media screen and (max-width:639px) {
-  .overlapped-image--bottom .overlapped-image__overlapping-wrapper {
+  .overlapped-image {
+    margin-bottom: 0;
+  }
+
+  .overlapped-image .overlapped-image__overlapping-wrapper {
     position: relative;
     width: 100%;
     left: 0;
