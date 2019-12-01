@@ -109,13 +109,13 @@ a:hover {
   background: grey; }
 
 .oden-athena__section {
-  padding: 6em 2em; }
+  padding: 6em 3em; }
 
 .oden-athena__section__title {
   font-size: 1.777em;
   font-weight: 700;
   color: #404040;
-  margin-bottom: calc(1.6rem*3 - 1.777em);
+  margin-bottom: calc(1.6rem*4 - 1.777em);
   position: relative; }
 
 .oden-athena__section__title::before {
@@ -286,7 +286,8 @@ body {
   padding-right: 2em;
   padding-bottom: .75em;
   margin-top: .75em;
-  margin-bottom: .75em; }
+  margin-bottom: .75em;
+  border-left: 1px solid #ccc; }
 
 .oden-athena__blockquote__quote {
   color: #444;
