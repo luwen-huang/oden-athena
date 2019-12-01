@@ -1,7 +1,7 @@
-// --- basic section ----
+// --- top level section ----
 
 .section {
-  padding: 6em 3em;
+  padding: 6em 3em 4.5em 3em;
 }
 
 .section__title {
@@ -33,4 +33,28 @@
 
 .section--dark .section__text {
   color: #ddd;
+}
+
+// -----
+
+.overlapped-image {
+  position: relative;
+}
+
+.overlapped-image--bottom .overlapped-image__overlapping-wrapper {
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  top: 50%;
+  padding: 6em 3em;
+  background: #fff;
+}
+
+@media screen and (max-width:639px) {
+  .overlapped-image--bottom .overlapped-image__overlapping-wrapper {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
 }

@@ -109,7 +109,7 @@ a:hover {
   background: grey; }
 
 .oden-athena__section {
-  padding: 6em 3em; }
+  padding: 6em 3em 4.5em 3em; }
 
 .oden-athena__section__title {
   font-size: 1.777em;
@@ -135,6 +135,24 @@ a:hover {
 
 .oden-athena__section--dark .oden-athena__section__text {
   color: #ddd; }
+
+.oden-athena__overlapped-image {
+  position: relative; }
+
+.oden-athena__overlapped-image--bottom .oden-athena__overlapped-image__overlapping-wrapper {
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  top: 50%;
+  padding: 6em 3em;
+  background: #fff; }
+
+@media screen and (max-width: 639px) {
+  .oden-athena__overlapped-image--bottom .oden-athena__overlapped-image__overlapping-wrapper {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0; } }
 
 .oden-athena__splash__title {
   margin-top: 1.5rem;
