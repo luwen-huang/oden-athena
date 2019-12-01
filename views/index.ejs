@@ -24,9 +24,10 @@
           <div class=" toc" id="toc">
             <section class="" id="fundamentals">
               <p class="toc__heading"><a href="/fundamentals">Fundamentals</a></p>
-              <p class="toc__sub-heading"><a href="/fundamentals#headings">Headings</a></p>
+              <p class="toc__sub-heading"><a href="/fundamentals#typography">Typography</a></p>
               <p class="toc__sub-heading"><a href="/fundamentals#links">Links</a></p>
               <p class="toc__sub-heading"><a href="/fundamentals#emphasis">Emphasis</a></p>
+              <p class="toc__sub-heading"><a href="/fundamentals#block-quote">Block Quote</a></p>
             </section>
             <section class="" id="components">
               <p class="toc__heading"><a href="/components">Components</a></p>
@@ -36,7 +37,7 @@
             </section>
             <section class="" id="layout">
               <p class="toc__heading"><a href="/layout">Page layout</a></p>
-              <p class="toc__sub-heading"><a href="/layout#basic-section">Basic section</a></p>
+              <p class="toc__sub-heading"><a href="/layout#top-level-section">Top Level section</a></p>
               <p class="toc__sub-heading"><a href="/layout#basic-splash">Basic splash</a></p>
             </section>
 
@@ -93,9 +94,9 @@
           <%if (page === 'layout') { %>
             <section class="section" id="layout">
               <h2 class="section__title">Page Layout</h2>
-              <p class="section__text">Guidelines for </p>
+              <p class="section__text">Guidelines for laying out the page.</p>
 
-              <% include _basicSection %>
+              <% include _topLevelSection %>
 
               <!-- <% include _splashBasic %>
 
