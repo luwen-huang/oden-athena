@@ -98,7 +98,21 @@ a.header__logo-text {
   margin-bottom: 1.6em;
 }
 
+pre {
+  background: #e5e5e5;
+  min-height: 2em;
+  padding: .5em;
+  margin-bottom: 1.5em;
+}
+
 code {
+  background: #e5e5e5;
+  border: none;
+  color: #333;
+  height: auto;
+  line-height: 2;
+  overflow-y: auto;
+  padding: .5em;
   font-size: .85em;
 }
 

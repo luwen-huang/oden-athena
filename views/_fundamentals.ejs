@@ -1,46 +1,90 @@
 <section class="section" id="fundamentals">
   <h2 class="section__title">Fundamentals</h2>
-  <p class="section__text">Fundamental style rules for typography </p>
+  <p class="section__text">This chapter covers </p>
 
-  <section class="section" id="fundamentals--headings">
-    <h2 class="section__title">Headings</h2>
-    <p class="section__text">There are three different sizes for three headings: h1, h2, and h3:</p>
-    <div class="demo-box">
-      <h1>h1 for page titles</h1>
-      <h2>h2 for section titles</h2>
-      <h3>h3 for declarative box and content box titles</h3>
-      <p class="section__text">p for paragraph text</p>
-    </div>
+  <a class="to-code-link" target="_blank" href="https://github.com/luwen-huang/oden-athena/blob/master/src/typography.scss">Github &rarr;</a>
+
+  <section class="section" id="typography">
+    <h2 class="section__title">Typography</h2>
+
+      <p class="section__text">There are several global (un-namespaced) styles. These are: all <b>typographic elements</b>, <b>body</b>, and <b>links</b>. Font sizes are set for all typographic elements globally.</p>
+
+    <p class="section__text">
+      The root <code>&lt;html&gt;</code> element is set at:
+      <div class="grid-x">
+        <div class="cell small-12 medium-6">
+          <ul class="">
+            <li class="section__text"> <b>16px</b>: 851px and above </li>
+            <li class="section__text"> <b>14px</b>: Between 640px and 850px, inclusive </li>
+            <li class="section__text"> <b>13px</b>: 639px and below </li>
+          </ul>
+        </div>
+        <div class="cell small-12 medium-6">
+
+        </div>
+      </div>
+    </p>
+
+    <p class="section__text">
+      The <code>&lt;body&gt;</code> element uses the <b>Libre Franklin</b> font, consistent with <a href="" target="_blank">UT guidelines</a>.
+    </p>
+
+    <pre><code>body { font-family: 'Libre Franklin', sans-serif; }</code></pre>
+
+    <p class="section__text">Headings and <code>&lt;p&gt;</code> elements also have specified color and font weight:</p>
+    <pre><code>h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Franklin', sans-serif;
+    color: #404040;
+    font-weight: 700;
+}
+p, li {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    color: #333;
+}</code></pre>
   </section>
 
-  <section class="section" id="fundamentals--links">
+
+  <section class="section" id="links">
     <h2 class="section__title">Links</h2>
     <p class="section__text">Textual links should be underlined and contain arrows, to draw attention to a single call-to-action. Use these links for links, not buttons. The only time when textual links should not be underlined or have an arrow is if they appear in the context of a block quote.</p>
+
+    <p class="section__text">Because the link underline is created using the background-image and gradient method, you must change the color of the <code>text-shadow</code> if you have a background color that is different than the default color of <code>#fcfcfc</code>.</p>
+
+
+    <script async src="//jsfiddle.net/luwenh/zsL0u8y4/2/embed/html,css/"></script>
+
     <div class="demo-box">
       <a class="oden-athena__with-text-underline">Learn more &rarr;</a>
     </div>
   </section>
 
-  <section class="section" id="fundamentals--block-quotes">
-    <h2 class="section__title">Block Quotes</h2>
-    <p class="section__text">Quotes from external sources should be positioned with plenty of whitespace so that it's clear they're distinct from the main text. </p>
-    <a target="_blank" href="https://github.com/luwen-huang/oden-athena/blob/master/src/_blockQuote.scss" class="to-code-link">View CSS &rarr;</a>
-    <div class="demo-box">
-      <blockquote class="oden-athena__blockquote">
-        <p class="oden-athena__blockquote__quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p class="oden-athena__blockquote__cite"><a class="">How to Build Artificial Intelligence We Can Trust,</a> The New York Times</p>
-      </blockquote>
-
-    </div>
-  </section>
-
-  <section class="section" id="fundamentals--emphasis">
+  <section class="section" id="emphasis">
     <h2 class="section__title">Emphasis</h2>
 
-    <p class="section__text">Links are different from emphases, which are words or short phrases underlined but are not clickable: </p>
+    <p class="section__text">Links are different from emphases, which are words or short phrases underlined but are not clickable. </p>
+
+    <script async src="//jsfiddle.net/luwenh/7yu1czvm/embed/html,css,result/"></script>
+
     <div class="demo-box">
       <p >A physics-based model is a representation of the governing laws of nature that innately embeds the concepts of <span class="oden-athena__with-text-emphasis">time, space and causality</span>. A physics-based model incorporates governing principles and laws of nature. </p>
     </div>
   </section>
+
+
+    <section class="section" id="block-quotes">
+      <h2 class="section__title">Block Quotes</h2>
+      <p class="section__text">Block quotes should be used for quotes from <b>external sources</b>. They are <b>not</b> the same as pull quotes, which are used to "pull" emphasizing text out of your own writing. Block quotes should be positioned with plenty of whitespace so that it's clear they're distinct from the main text. </p>
+      <a target="_blank" href="https://github.com/luwen-huang/oden-athena/blob/master/src/_blockQuote.scss" class="to-code-link">Gitbhub &rarr;</a>
+
+      <div class="demo-box">
+        <blockquote class="oden-athena__blockquote">
+          <p class="oden-athena__blockquote__quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="oden-athena__blockquote__cite"><a class="">How to Build Artificial Intelligence We Can Trust,</a> The New York Times</p>
+        </blockquote>
+
+      </div>
+    </section>
 
 </section>
