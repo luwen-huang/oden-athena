@@ -24,16 +24,17 @@
           <div class=" toc" id="toc">
             <section class="" id="fundamentals">
               <p class="toc__heading"><a href="/fundamentals">Fundamentals</a></p>
+              <p class="toc__sub-heading"><a href="/fundamentals#page-wrapper">Page wrapper</a></p>
               <p class="toc__sub-heading"><a href="/fundamentals#typography">Typography</a></p>
               <p class="toc__sub-heading"><a href="/fundamentals#links">Links</a></p>
               <p class="toc__sub-heading"><a href="/fundamentals#emphasis">Emphasis</a></p>
-              <p class="toc__sub-heading"><a href="/fundamentals#block-quote">Block Quote</a></p>
             </section>
             <section class="" id="components">
               <p class="toc__heading"><a href="/components">Components</a></p>
               <p class="toc__sub-heading"><a href="/components#declarative-box">Declarative box</a></p>
               <p class="toc__sub-heading"><a href="/components#content-box">Content box</a></p>
               <p class="toc__sub-heading"><a href="/components#brick">Brick</a></p>
+              <p class="toc__sub-heading"><a href="/components#block-quote">Block Quote</a></p>
             </section>
             <section class="" id="layout">
               <p class="toc__heading"><a href="/layout">Page layout</a></p>
@@ -82,12 +83,14 @@
               <h2 class="section__title">Components</h2>
               <p class="section__text">In this section, there are three components that look very much alike: Declarative Box, Content Box, and Brick. Their difference is in the granularity of what it is you're showing. <b>Declarative Boxes</b> are meant to be large, full page-width items; the intent is for the user to focus on that single item only. <b>Content Boxes</b> are meant for for medium-pieced items, when you want to show a collection of ~3-4 objects. <b>Bricks</b> are meant to show small items, such as news objects and other things you might want to put into a list. Even though they may look alike now, they will diverge as Content Boxes and Bricks will have more and more details added to them, but not Declarative Boxes, since Declarative Boxes are not meant to flood the user with details at first sight. </p>
 
-
               <% include _declarativeBox %>
 
               <% include _contentBox %>
 
               <% include _brick %>
+
+              <% include _blockQuote %>
+
             </section>
           <% } %>
 

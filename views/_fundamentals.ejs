@@ -1,13 +1,22 @@
 <section class="section" id="fundamentals">
   <h2 class="section__title">Fundamentals</h2>
-  <p class="section__text">This chapter covers </p>
+  <p class="section__text">This chapter covers assumptions and global styles to watch for.</p>
 
-  <a class="to-code-link" target="_blank" href="https://github.com/luwen-huang/oden-athena/blob/master/src/typography.scss">Github &rarr;</a>
+  <section class="section" id="page-wrapper">
+    <h2 class="section__title">Page Wrapper</h2>
+    <a class="to-code-link" target="_blank" href="https://github.com/luwen-huang/oden-athena/blob/master/src/layout/index.scss">Github &rarr;</a>
+
+    <p class="section__text">You should wrap all content except scripts within the <code>&lt;body&gt;</code> element with a <code>&lt;div class="oden-athena__bg-wrapper"&gt;</code> wrapper so that you can assign a custom background color without CSS conflicts. </p>
+    
+    <script async src="//jsfiddle.net/luwenh/5cjmfwo9/5/embed/html,css,result/"></script>
+  </section>
+
 
   <section class="section" id="typography">
     <h2 class="section__title">Typography</h2>
+    <a class="to-code-link" target="_blank" href="https://github.com/luwen-huang/oden-athena/blob/master/src/typography.scss">Github &rarr;</a>
 
-      <p class="section__text">There are several global (un-namespaced) styles. These are: all <b>typographic elements</b>, <b>body</b>, and <b>links</b>. Font sizes are set for all typographic elements globally.</p>
+    <p class="section__text">There are several global (un-namespaced) styles. These are: all <b>typographic elements</b>, <b>body</b>, and <b>links</b>. Font sizes are set for all typographic elements globally.</p>
 
     <p class="section__text">
       The root <code>&lt;html&gt;</code> element is set at:
@@ -71,21 +80,5 @@ p, li {
     </div>
   </section>
 
-
-    <section class="section" id="block-quote">
-      <h2 class="section__title">Block Quotes</h2>
-      <p class="section__text">Block quotes should be used for quotes from <b>external sources</b>. They are <b>not</b> the same as pull quotes, which are used to "pull" emphasizing text out of your own writing. Block quotes should be positioned with plenty of whitespace so that it's clear they're distinct from the main text. </p>
-      <a target="_blank" href="https://github.com/luwen-huang/oden-athena/blob/master/src/_blockQuote.scss" class="to-code-link">Github &rarr;</a>
-
-      <script async src="//jsfiddle.net/luwenh/uorwz9tg/3/embed/html,css,result/"></script>
-
-      <div class="demo-box">
-        <blockquote class="oden-athena__blockquote">
-          <p class="oden-athena__blockquote__quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p class="oden-athena__blockquote__cite"><a class="">How to Build Artificial Intelligence We Can Trust,</a> The New York Times</p>
-        </blockquote>
-
-      </div>
-    </section>
 
 </section>

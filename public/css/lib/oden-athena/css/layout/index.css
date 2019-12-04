@@ -5,7 +5,7 @@
   font-size: 1.777em;
   font-weight: 700;
   color: #404040;
-  margin-bottom: calc(1.6rem*4 - 1.777em);
+  margin-bottom: calc(1.5rem*4 - 1.777em);
   position: relative; }
 
 .oden-athena__section__title::before {
