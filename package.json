@@ -4,8 +4,8 @@
   "description": "CSS and style guide for Oden",
   "scripts": {
     "dev": "nodemon ./bin/www",
-    "build": "gulp",
-    "docs": "rm -r ./public/css/lib/oden-athena; cp -r ./dist ./public/css/lib/dist; mv ./public/css/lib/dist ./public/css/lib/oden-athena"
+    "docs": "rm -r ./public/css/lib/oden-athena; cp -r ./dist ./public/css/lib/dist; mv ./public/css/lib/dist ./public/css/lib/oden-athena",
+    "build": "gulp; npm run docs"
   },
   "author": "",
   "license": "ISC",
